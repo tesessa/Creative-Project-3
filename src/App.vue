@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+   <div id="menu">
+      <router-link to="/">Home</router-link>  
+     <router-link to="/about">About</router-link>
+     <router-link to="/blog">Blog</router-link>
+     </div>
     <router-view/>
   </div>
 </template>
@@ -29,4 +30,17 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+#menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5px;
+	grid-template-areas: "none brand side";
+	margin-bottom: 50px;
+}
+
+#menu a {
+	color: #B84901;
+}
+
 </style>
