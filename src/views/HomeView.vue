@@ -7,6 +7,7 @@
 	<img src="../../images/Senior3.jpg" class="avatar">
        <h3 class="username">Tessa Andersen</h3>
        <p class="comment">Louisiana Baton Rouge Mission</p>
+       <p class="intro">Oh hi! My name is Tessa Andersen and this is going to be my future blog for my mission!</p>
       </div>
       </div>
       <div class="image">
@@ -48,7 +49,7 @@ img {
 	width: 95%;
 	margin: 20px 1.15%;
 	height: 250px;
-	background-color: #CBE9F9;
+	background-color: #FCF6F9;
 }
 
 .avatar {
@@ -57,7 +58,7 @@ img {
 	height: 200px;
 	margin: 25px;
 	border-radius: 50%;
-	background-color: #D6E9FE;
+	background-color: #FCF6F9;
 }
 
 
@@ -77,4 +78,7 @@ img {
 	height: 75%;
 }
 
- </style>
+.info {
+	font-size: 15px;
+}
+</style>
