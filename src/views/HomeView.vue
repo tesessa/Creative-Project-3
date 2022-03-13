@@ -2,20 +2,20 @@
   <div class="home">
     <div class="Australia">
     </div>
-   <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+     <div class="column">
+	<img src="../../images/Senior3.jpg" class="avatar">
+       <h3 class="username">Tessa Andersen</h3>
+       <p class="comment">Louisiana Baton Rouge Mission</p>
+      </div>
+      </div>
+      <div class="image">
+      <img src="../../images/FamilySydney.jpg">
+      </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style scoped>
@@ -41,4 +41,40 @@ img {
    width: 100%;
    height: 300px;
   }
+
+
+.column {
+	float: left;
+	width: 95%;
+	margin: 20px 1.15%;
+	height: 250px;
+	background-color: #CBE9F9;
+}
+
+.avatar {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 25px;
+	border-radius: 50%;
+	background-color: #D6E9FE;
+}
+
+
+.username {
+	margin-top: 30px;
+	font-size: 50px;
+}
+
+.comment {
+	margin: 10px;
+	font-size: 25px;
+	overflow: hidden;
+}
+
+.image img {
+	width: 75%;
+	height: 75%;
+}
+
  </style>

@@ -1,8 +1,7 @@
 /* eslint-disable */
 <template>
 <div>
-  <h1>Blog</h1>
-     <BlogList :blog="blog" />
+     <BlogList :blogs="blogs" />
    </div>
  </template>
 
@@ -14,10 +13,22 @@ name: 'MyBlog',
    components: {
      BlogList
    },
+   data() {
+     return {
+      }
+    },
    computed: {
-     blog() {
-       return this.$root.$data.blog;
+     blogs() {
+       return this.$root.$data.blogs;
      }
    },
-};
+}
 </script>
+
+<style scoped>
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+</style>
